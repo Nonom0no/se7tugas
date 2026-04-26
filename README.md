@@ -2,9 +2,11 @@
 
 ## Identitas
 
-Nama: Muhammad Syahrul Pane
-NIM: 2410511090
-Kelas: SE2 B
+|           |                       |
+| --------- | ----------------------|
+| **Nama**  | Muhammad Syahrul Pane |
+| **NIM**   | 2410511078            |
+| **Kelas** | SE2 B                 |
 
 ---
 
@@ -20,17 +22,21 @@ Project ini merupakan implementasi API Gateway lintas bahasa menggunakan:
 
 ### Game Service (Node.js - MongoDB)
 
-| GET    | /games     | Ambil semua game                |
-| POST   | /games     | Tambah game                     |
-| DELETE | /games/:id | Hapus game berdasarkan id       |
+| METHOD | ENDPOINT              | DESKRIPSI                       |
+| ------ | ----------------------| ------------------------------- |
+| GET    | /games                | Ambil semua game                |
+| POST   | /games                | Tambah game                     |
+| DELETE | /games/:id            | Hapus game berdasarkan id       |
 
 ---
 
 ### Review Service (PHP)
 
-| GET    | /reviews     | Ambil semua review                |
-| POST   | /reviews     | Tambah review                     |
-| DELETE | /reviews/:id | Hapus review berdasarkan id       |
+| METHOD | ENDPOINT              | DESKRIPSI                         |
+| ------ | ----------------------| --------------------------------- |
+| GET    | /reviews              | Ambil semua review                |
+| POST   | /reviews              | Tambah review                     |
+| DELETE | /reviews/:id          | Hapus review berdasarkan id       |
 
 ---
 
@@ -64,15 +70,36 @@ node gateaway.js
 
 ### Game Service
 
-* GET → http://localhost:3000/list/games
-* POST → http://localhost:3000/list/games
-* DELETE → http://localhost:3000/list/games/{id}
+* GET - http://localhost:3000/list/games
+* POST - http://localhost:3000/list/games
+* POST BODY
+
+**Body (JSON):**
+```json
+{
+  "title": "PUBG",
+  "genre": "Battlegrounds",
+  "price": 0
+}
+```
+* DELETE - http://localhost:3000/list/games/{id}
+
+
 
 ### Review Service
 
-* GET → http://localhost:3000/reviews
-* POST → http://localhost:3000/reviews
-* DELETE → http://localhost:3000/reviews/{id}
+* GET - http://localhost:3000/reviews
+* POST - http://localhost:3000/reviews
+* POST BODY
+
+**Body (JSON):**
+```json
+{
+  "game": "Mobile Legend",
+  "rating": 2
+}
+```
+* DELETE - http://localhost:3000/reviews/{id}
 
 ---
 
