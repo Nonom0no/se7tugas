@@ -2,7 +2,7 @@
 
 ## Identitas
 
-Nama Muhammad Syahrul Pane
+Nama: Muhammad Syahrul Pane
 NIM: 2410511090
 Kelas: SE2 B
 
